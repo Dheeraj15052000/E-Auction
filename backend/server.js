@@ -21,9 +21,7 @@ app.use(express.json());
 
 
 
-app.get("/", (req, res) => {
-  res.send("API is running");
-});
+
 //routes
 app.use('/api/orders', orderRoutes)
 app.use("/api/products", productRoutes);
@@ -41,7 +39,7 @@ app.use(errorHandler)
 //const __dirname = path.resolve()
 //app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
 app.use("/uploads", express.static("uploads"))
-
+/*
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '/frontend/build')))
 
@@ -52,7 +50,7 @@ if (process.env.NODE_ENV === 'production') {
   app.get('/', (req, res) => {
     res.send('API is running....')
   })
-}
+}*/
 
 const PORT = process.env.PORT || 5000;
 
