@@ -1,0 +1,9 @@
+.rating span{
+    margin: 0.1rem;
+}
+main{
+    min-height: 80vh;
+}
+h3{
+    padding: 0.5rem 0;
+}
