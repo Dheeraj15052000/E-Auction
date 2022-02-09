@@ -14,6 +14,7 @@ import path from 'path';
 
 dotenv.config();
 
+const __dirname = path.resolve();
 
 connectDB();
 const app = express();
